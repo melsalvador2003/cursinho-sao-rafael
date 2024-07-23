@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/logos/favicon cite cursinho.jpg" type="image/jpg">
+    <title>São Rafael | Cursinho popular</title>
+
+    <!-- LINK FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- LINK MEU CSS -->
+    <link rel="stylesheet" href="estilizacao.css">
+    <link rel="stylesheet" href="slide/splide/dist/css/splide.min.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <nav class="navheader">
+
+            <img class="logo-header" src="/logos/logo-png-200x100.png" alt="">
+
+            <div>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#FA152D">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+
+            </label>
+            <div class="links-container">
+                <label for="sidebar-active" class="open-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#FA152D">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+
+                <!-- <img class="logo-header" src="/logos/logo-png-200x100.png" alt=""> -->
+
+                <a class="home-link" href="home.html">Início</a>
+                <a class="a header" href="parceiros.html">Parceiros</a>
+                <a class="a header" href="doacoes.html">Doação</a>
+                <a class="a header" href="inscrições.html">Inscrições</a>
+            </div></div>
+
+        </nav>
+    </header>
+
+    <main class="conteudo">
+
+        <article class="conteudo-da-pagina limitador">
+
+            <h2>Pré Inscrição - Cursinho Popular São Rafael</h2>
+            <br>
+            <p>
+                O Cursinho Popular São Rafael está com inscrições abertas para as turmas de 2024. O cursinho é
+                totalmente gratuito e voltado para alunos do 3º ano do Ensino Médio ou aqueles que já o concluíram,
+                residentes na São Rafael em Guarulhos e arredores, e que tenham interesse em ingressar em alguma
+                universidade.
+            </p>
+
+            <br>
+
+            <P>O objetivo deste formulário é realizar uma pré-inscrição. As inscrições presenciais ocorrerão sempre aos
+                sábados. Você realiza a matrícula e já fica para as aulas.</P>
+
+            <br>
+
+            <p>Atenção: os campos <b>nome</b>, <b>data de nascimento</b>, <b>endereço</b>,<b>formação</b>,<b>nome da
+                    escola</b> e <b>telefone</b> são obrigatórios.</p> <br>
+
+            <!-- Atributo action tem aver com o destinho/forma de programação de processamento. Por hora, deixe vazio.
+                     Atributo method é a forma mais segura e recomendada para transmitir os dados.Sempre use em formulários de contato/cadastro. -->
+            <!-- Link do action é criado no FORMSPREE -->
+
+            <form action="https://formspree.io/f/myzgyeaj" method="post">
+
+                <p>
+
+                    <label for="nome">Nome*</label>
+                    <input required type="text" id="nome" name="nome"><br><br>
+                </p>
+
+                <p>
+                    <label for="data_nascimento">Data de Nascimento*</label>
+                    <input required type="date" id="data_nascimento" name="data_nascimento"><br><br>
+                </p>
+
+                <p>
+                    <label for="raca">Raça:</label>
+                    <br>
+                    <input type="radio" id="branco" name="raca" value="branco" required>
+                    <label for="branco">Branco</label>
+                    <br>
+                    <input type="radio" id="parda" name="raca" value="parda">
+                    <label for="parda">Parda</label>
+                    <br>
+                    <input type="radio" id="negro" name="raca" value="negro">
+                    <label for="negro">Negro</label>
+                    <br>
+                    <input type="radio" id="amarela" name="raca" value="amarela">
+                    <label for="amarela">Amarela</label>
+                    <br>
+                    <input type="radio" id="indigena" name="raca" value="indigena">
+                    <label for="indigena">Indígena</label>
+                    <br>
+                    <input type="radio" id="outro" name="raca" value="outro">
+                    <label for="outro">Outro</label>
+                    <br>
+                    <br>
+                <p>
+                    (Se selecionar "Outro", por favor especifique)</p>
+                <br>
+                <input type="text" id="outro_especifico" name="outro_especifico">
+                <br><br>
+                </p>
+
+                <p>
+                    <label for="endereco">Endereço*</label>
+                    <input required type="text" id="endereco" name="endereco"><br><br>
+                </p>
+
+                <p>
+                    <label for="formacao">Formação:</label>
+                    <br>
+                    <input type="radio" id="cursando_3ano" name="formacao"
+                        value="Cursando 3º Ano do Ensino médio em Escola Pública" required>
+                    <label for="cursando_3ano">Cursando 3º Ano do Ensino médio em Escola Pública</label>
+                    <br>
+                    <input type="radio" id="ensino_medio_concluido" name="formacao"
+                        value="Ensino médio concluído em Escola Pública">
+                    <label for="ensino_medio_concluido">Ensino médio concluído em Escola Pública</label>
+                    <br>
+                    <input type="radio" id="outro" name="formacao" value="Outro">
+                    <label for="outro">Outro</label>
+                    <br>
+                    <br>
+                <p>(Se selecionar "Outro", por favor especifique)</p> <br>
+                <input type="text" id="outro_especifico" name="outro_especifico">
+                <br><br>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone*</label>
+                    <input required type="tel" id="telefone" name="telefone"><br><br>
+                </p>
+
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"><br><br>
+                </p>
+
+                <p>
+                    <label for="escola">Escola:</label>
+                    <input type="text" id="escola" name="escola"><br><br>
+                </p>
+
+                <p>
+                    <button type="submit" id="enviar">Enviar dados</button>
+                </p>
+
+            </form>
+
+        </article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#"><img src="logos/logocursinhosite2.png" alt=""></a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Mapa do site</h4>
+                    <ul>
+                        <li><a href="home.html">Início</a></li>
+                        <li><a href="#">Incrições</a></li>
+                        <li><a href="#">Colaboradores</a></li>
+                        <li><a href="inscrições.html">Inscrições</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Endereço</h4>
+                    <ul>
+                        <li><a href="#">R. Deus do Sol s/n <br> Vila Itapegica, Guarulhos - SP <br>07044-090</a></li>
+
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Bora conectar?</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Cursinho-Popular-Geva-S%C3%A3o-Rafael-100083177118158/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/cursinho_saorafael/"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </footer>
+
+</body>
+
+</html>
