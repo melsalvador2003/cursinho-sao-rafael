@@ -459,7 +459,7 @@ label:hover label:focus {
     align-items: center;
     text-align:left;
     border-radius: 8px;
-    max-height: 500px;
+    max-height: 400px;
     /* max-height: 468px;  */
     }
 
