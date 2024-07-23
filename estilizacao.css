@@ -56,7 +56,7 @@ a {
 }
 
 article {
-    padding: 90px;
+    padding: 70px;
 }
 
 .conteiner {
@@ -360,7 +360,7 @@ main.cards section.card p {
 form {
     max-width: 600px;
     margin: auto;
-    padding: 90px;
+    padding: 40px;
     background-color: #FBF5DF;
     border-radius: 20px;
 }
